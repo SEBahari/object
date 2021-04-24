@@ -60,3 +60,15 @@ const users = [
         scores: {english: 10, math: 19.5, physics: 14},
     },
 ];
+{
+    // Practice One
+}
+{
+    // Practice Two
+}
+{
+    // Practice Three
+}
+{
+    // Practice Four
+}
