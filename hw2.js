@@ -33,6 +33,15 @@ const user = {
 }
 {
     // Practice Two
+
+    let newUser = addRole(user, "manager");
+    console.log(newUser);
+
+    function addRole(user, role) {
+        user.roles.push(role);
+        user.age < 18 && (user.status = "very-young");  // in this case user is 19 years old.
+        return user;
+    }
 }
 {
     // Practice Three
