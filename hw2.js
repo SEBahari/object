@@ -20,6 +20,16 @@ const user = {
 
 {
     // Practice One
+
+    let newUser = addNewCourseScore(user, "chemistry", 0);
+    console.log(newUser);
+
+    function addNewCourseScore(user, course, score) {
+        if (!user.scores[course]) {
+            user.scores[course] = score;
+        }
+        return user;
+    }
 }
 {
     // Practice Two
