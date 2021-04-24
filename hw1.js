@@ -82,6 +82,18 @@ const users = [
 }
 {
     // Practice Three
+
+    let sortedUsers = sortByAvg(users);
+    console.log(sortedUsers);
+
+    function sortByAvg(users) {
+        users.map(function (item) {
+            let sumOfScores = Object.values(item.scores).reduce((a, b) => a + b, 0);
+            let scoresCount = Object.keys(item.scores).length;
+            item.avg = sumOfScores / scoresCount;
+        });
+        return users.sort((a, b) => a.avg - b.avg);  // sort from lower avg to higher.
+    }
 }
 {
     // Practice Four
