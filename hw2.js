@@ -26,4 +26,13 @@ const user = {
 }
 {
     // Practice Three
+
+    let newWithFatherName = addFatherName(user, 'morteza');
+    console.log(newWithFatherName);
+
+    function addFatherName(user, fatherName) {
+        let arrayOfUser = Object.entries(user);
+        arrayOfUser.push(['fatherName', fatherName]);
+        return Object.fromEntries(arrayOfUser);
+    }
 }
