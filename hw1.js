@@ -62,6 +62,13 @@ const users = [
 ];
 {
     // Practice One
+
+    let sortedUsers = sortingByAge(users);
+    console.log(sortedUsers);
+
+    function sortingByAge(arr) {
+        return arr.sort((a, b) => a.age - b.age);
+    }
 }
 {
     // Practice Two
