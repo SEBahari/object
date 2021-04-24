@@ -72,6 +72,13 @@ const users = [
 }
 {
     // Practice Two
+
+    let adminUsers = detectRole(users, 'admin');
+    console.log(adminUsers);
+
+    function detectRole(users, role) {
+        return users.filter(item => item.roles.includes(role));
+    }
 }
 {
     // Practice Three
