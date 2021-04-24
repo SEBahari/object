@@ -97,4 +97,20 @@ const users = [
 }
 {
     // Practice Four
+
+    let statusOfUsers = status(users);
+    console.log(statusOfUsers);
+
+    function status(users) {
+        let statuses = {};
+        users.map((user) => {
+            let sumOfScores = Object.values(user.scores).reduce((a, b) => a + b, 0);
+            let scoresCount = Object.keys(user.scores).length;
+            user.avg = sumOfScores / scoresCount;
+        });
+
+        users.forEach(user => statuses[user.name] = (user.avg > 15) ? "passed" : "failed");
+
+        return statuses;
+    }
 }
