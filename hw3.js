@@ -33,4 +33,7 @@ const date = new Date('2006-10-23');
 }
 {
     // Practice Two
+
+    let options = {calendar: 'persian', dateStyle: 'long'};
+    console.log(new Intl.DateTimeFormat('en-US', options).format(date));
 }
